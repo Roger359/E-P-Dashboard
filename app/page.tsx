@@ -50,8 +50,8 @@ export default async function Home() {
         {/* Header */}
         <div className="mb-6 md:mb-8">
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-2 flex items-center gap-2 md:gap-3">
-            <Fuel className="w-7 h-7 md:w-10 md:h-10 text-amber-500 dark:text-amber-400" />
-            <span className="leading-tight">Dashboard Petrolero</span>
+            <Fuel className="w-7 h-7 md:w-10 md:h-10 text-[#52ab32] dark:text-amber-400" />
+            <span className="leading-tight">Cpven E&P - Dashboard</span>
           </h1>
           <p className="text-slate-600 dark:text-slate-400 text-sm md:text-lg">
             Análisis de producción, reservas y economía de 50 países

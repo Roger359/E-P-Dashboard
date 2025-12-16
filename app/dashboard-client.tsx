@@ -59,7 +59,7 @@ export default function DashboardClient({ oilData }: DashboardClientProps) {
           </h2>
           <ExportsBar data={exportsByProduction} />
           <ExportsLine data={exportsByProduction} />
-          <ExportsPie data={exportsByProduction} />
+          {/* <ExportsPie data={exportsByProduction} /> */}
         </div>
 
         {/* Production Dependency Chart */}

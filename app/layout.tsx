@@ -44,7 +44,7 @@ export default function RootLayout({
             <div className="flex items-center justify-between h-full px-4">
               <div className="flex items-center gap-2">
                 <BarChart3 className="w-6 h-6 text-amber-500 dark:text-amber-400" />
-                <h2 className="text-lg font-bold text-slate-900 dark:text-white">Oil Dashboard</h2>
+                <h2 className="text-lg font-bold text-slate-900 dark:text-white">E&P Dashboard</h2>
               </div>
               <div className="flex items-center gap-2">
                 <Link 
@@ -69,9 +69,9 @@ export default function RootLayout({
             <div className="p-6 flex flex-col h-full">
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-3">
-                  <BarChart3 className="w-8 h-8 text-amber-500 dark:text-amber-400" />
+                  <BarChart3 className="w-8 h-8 text-[#52ab32] dark:text-amber-400" />
                   <div>
-                    <h2 className="text-xl font-bold text-slate-900 dark:text-white">Oil Dashboard</h2>
+                    <h2 className="text-xl font-bold text-slate-900 dark:text-white">CPVEN E&P</h2>
                     <p className="text-xs text-slate-600 dark:text-slate-400">Análisis Global</p>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ export default function RootLayout({
               <nav className="space-y-2">
                 <Link 
                   href="/" 
-                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-amber-500 dark:hover:text-amber-400 transition-colors group"
+                  className="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-[#52ab32] dark:hover:text-[#52ab32] transition-colors group"
                 >
                   <Home className="w-5 h-5" />
                   <span className="font-medium">Dashboard Principal</span>
