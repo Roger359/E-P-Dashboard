@@ -1,0 +1,1413 @@
+{
+  "metadata": {
+    "archivo": "Eficiencia Petrolera Por PIB.xlsx",
+    "fecha_analisis": "2025-12-04",
+    "descripcion": "Datos sobre indicadores petroleros de 50 países productores",
+    "hojas": {
+      "exportaciones": {
+        "nombre": "EXPORTACIONES",
+        "descripcion": "Datos de países ordenados por categoría de PIB Petrolero",
+        "total_registros": 50,
+        "columnas": [
+          {
+            "nombre": "rank",
+            "tipo": "int",
+            "descripcion": "Ranking del país por producción"
+          },
+          {
+            "nombre": "pais",
+            "tipo": "string",
+            "descripcion": "Nombre del país"
+          },
+          {
+            "nombre": "produccion_bbl_d",
+            "tipo": "int",
+            "unidad": "bbl/d",
+            "descripcion": "Producción de crudo en barriles por día"
+          },
+          {
+            "nombre": "reservas_probadas_MMM_bbl",
+            "tipo": "float",
+            "unidad": "MMM bbl",
+            "descripcion": "Reservas probadas en miles de millones de barriles"
+          },
+          {
+            "nombre": "poblacion_2024_mm",
+            "tipo": "float",
+            "unidad": "millones",
+            "descripcion": "Población estimada para 2024"
+          },
+          {
+            "nombre": "pib_petrolero_categoria",
+            "tipo": "string",
+            "descripcion": "Categoría del porcentaje del PIB que representa el petróleo"
+          }
+        ]
+      },
+      "productores": {
+        "nombre": "PRODUCTORES",
+        "descripcion": "Datos detallados de países productores incluyendo años de producción",
+        "total_registros": 50,
+        "columnas": [
+          {
+            "nombre": "rank",
+            "tipo": "int",
+            "descripcion": "Ranking del país por producción"
+          },
+          {
+            "nombre": "pais",
+            "tipo": "string",
+            "descripcion": "Nombre del país"
+          },
+          {
+            "nombre": "produccion_bbl_d",
+            "tipo": "int",
+            "unidad": "bbl/d",
+            "descripcion": "Producción de crudo en barriles por día"
+          },
+          {
+            "nombre": "produccion_mbbl_d",
+            "tipo": "float",
+            "unidad": "mbbl/d",
+            "descripcion": "Producción de crudo en miles de barriles por día"
+          },
+          {
+            "nombre": "anos_produccion",
+            "tipo": "float",
+            "unidad": "años",
+            "descripcion": "Años estimados de producción restantes basados en reservas actuales"
+          },
+          {
+            "nombre": "reservas_probadas_MMM_bbl",
+            "tipo": "float",
+            "unidad": "MMM bbl",
+            "descripcion": "Reservas probadas en miles de millones de barriles"
+          },
+          {
+            "nombre": "poblacion_2024_mm",
+            "tipo": "float",
+            "unidad": "millones",
+            "descripcion": "Población estimada para 2024"
+          },
+          {
+            "nombre": "exportaciones_petroleras_categoria",
+            "tipo": "string",
+            "descripcion": "Categoría del porcentaje de exportaciones petroleras"
+          }
+        ]
+      }
+    },
+    "unidades": {
+      "bbl_d": "Barriles por día",
+      "mbbl_d": "Miles de barriles por día",
+      "MMM_bbl": "Miles de millones de barriles (mil millones)",
+      "mm": "Millones"
+    },
+    "categorias": {
+      "pib_petrolero": {
+        "50": {
+          "categoria": "Muy alta (40–60%)",
+          "valor_min": 40,
+          "valor_max": 60,
+          "valor_medio": 50
+        },
+        "35": {
+          "categoria": "Alta (30–45%)",
+          "valor_min": 30,
+          "valor_max": 45,
+          "valor_medio": 35
+        },
+        "25": {
+          "categoria": "Media-alta (20–30%)",
+          "valor_min": 20,
+          "valor_max": 30,
+          "valor_medio": 25
+        },
+        "15": {
+          "categoria": "Media (10–20%)",
+          "valor_min": 10,
+          "valor_max": 20,
+          "valor_medio": 15
+        },
+        "7": {
+          "categoria": "Baja (5–10%)",
+          "valor_min": 5,
+          "valor_max": 10,
+          "valor_medio": 7
+        },
+        "3": {
+          "categoria": "Muy baja (<5%)",
+          "valor_min": 0,
+          "valor_max": 5,
+          "valor_medio": 3
+        }
+      },
+      "exportaciones_petroleras": {
+        "Muy alta (40–60%)": {
+          "valor_min": 40,
+          "valor_max": 60,
+          "valor_medio": 50
+        },
+        "Alta (30–45%)": {
+          "valor_min": 30,
+          "valor_max": 45,
+          "valor_medio": 37.5
+        },
+        "Media-alta (20–30%)": {
+          "valor_min": 20,
+          "valor_max": 30,
+          "valor_medio": 25
+        },
+        "Media (10–20%)": {
+          "valor_min": 10,
+          "valor_max": 20,
+          "valor_medio": 15
+        },
+        "Baja (5–10%)": {
+          "valor_min": 5,
+          "valor_max": 10,
+          "valor_medio": 7.5
+        },
+        "Muy baja (<5%)": {
+          "valor_min": 0,
+          "valor_max": 5,
+          "valor_medio": 2.5
+        }
+      }
+    }
+  },
+  "datos": {
+    "exportaciones": [
+      {
+        "rank": 6,
+        "pais": "Irak",
+        "produccion_bbl_d": 4162000,
+        "reservas_probadas_MMM_bbl": 143.1,
+        "poblacion_2024_mm": 45.0,
+        "pib_petrolero_categoria": "50"
+      },
+      {
+        "rank": 10,
+        "pais": "Kuwait",
+        "produccion_bbl_d": 2720000,
+        "reservas_probadas_MMM_bbl": 101.5,
+        "poblacion_2024_mm": 4.5,
+        "pib_petrolero_categoria": "50"
+      },
+      {
+        "rank": 14,
+        "pais": "Qatar",
+        "produccion_bbl_d": 1815100,
+        "reservas_probadas_MMM_bbl": 25.2,
+        "poblacion_2024_mm": 3.0,
+        "pib_petrolero_categoria": "50"
+      },
+      {
+        "rank": 18,
+        "pais": "Libia",
+        "produccion_bbl_d": 1255000,
+        "reservas_probadas_MMM_bbl": 48.4,
+        "poblacion_2024_mm": 7.1,
+        "pib_petrolero_categoria": "50"
+      },
+      {
+        "rank": 20,
+        "pais": "Omán",
+        "produccion_bbl_d": 1040000,
+        "reservas_probadas_MMM_bbl": 5.4,
+        "poblacion_2024_mm": 4.7,
+        "pib_petrolero_categoria": "50"
+      },
+      {
+        "rank": 40,
+        "pais": "Sudán del Sur",
+        "produccion_bbl_d": 160000,
+        "reservas_probadas_MMM_bbl": 3.5,
+        "poblacion_2024_mm": 11.5,
+        "pib_petrolero_categoria": "50"
+      },
+      {
+        "rank": 46,
+        "pais": "Brunéi",
+        "produccion_bbl_d": 100000,
+        "reservas_probadas_MMM_bbl": 1.1,
+        "poblacion_2024_mm": 0.45,
+        "pib_petrolero_categoria": "50"
+      },
+      {
+        "rank": 2,
+        "pais": "Arabia Saudita",
+        "produccion_bbl_d": 10815700,
+        "reservas_probadas_MMM_bbl": 266.6,
+        "poblacion_2024_mm": 36.0,
+        "pib_petrolero_categoria": "35"
+      },
+      {
+        "rank": 8,
+        "pais": "Emiratos Árabes Unidos",
+        "produccion_bbl_d": 3770000,
+        "reservas_probadas_MMM_bbl": 97.8,
+        "poblacion_2024_mm": 10.2,
+        "pib_petrolero_categoria": "35"
+      },
+      {
+        "rank": 19,
+        "pais": "Angola",
+        "produccion_bbl_d": 1235000,
+        "reservas_probadas_MMM_bbl": 8.4,
+        "poblacion_2024_mm": 36.0,
+        "pib_petrolero_categoria": "35"
+      },
+      {
+        "rank": 25,
+        "pais": "Azerbaiyán",
+        "produccion_bbl_d": 712000,
+        "reservas_probadas_MMM_bbl": 7.0,
+        "poblacion_2024_mm": 10.1,
+        "pib_petrolero_categoria": "35"
+      },
+      {
+        "rank": 33,
+        "pais": "Congo (Rep. del Congo)",
+        "produccion_bbl_d": 275000,
+        "reservas_probadas_MMM_bbl": 1.8,
+        "poblacion_2024_mm": 5.8,
+        "pib_petrolero_categoria": "35"
+      },
+      {
+        "rank": 34,
+        "pais": "Turkmenistán",
+        "produccion_bbl_d": 270000,
+        "reservas_probadas_MMM_bbl": 0.6,
+        "poblacion_2024_mm": 7.0,
+        "pib_petrolero_categoria": "35"
+      },
+      {
+        "rank": 13,
+        "pais": "Kazajistán",
+        "produccion_bbl_d": 1897000,
+        "reservas_probadas_MMM_bbl": 30.0,
+        "poblacion_2024_mm": 20.0,
+        "pib_petrolero_categoria": "25"
+      },
+      {
+        "rank": 16,
+        "pais": "Nigeria",
+        "produccion_bbl_d": 1647000,
+        "reservas_probadas_MMM_bbl": 37.1,
+        "poblacion_2024_mm": 227.0,
+        "pib_petrolero_categoria": "25"
+      },
+      {
+        "rank": 17,
+        "pais": "Argelia",
+        "produccion_bbl_d": 1415000,
+        "reservas_probadas_MMM_bbl": 12.2,
+        "poblacion_2024_mm": 45.5,
+        "pib_petrolero_categoria": "25"
+      },
+      {
+        "rank": 21,
+        "pais": "Venezuela",
+        "produccion_bbl_d": 943000,
+        "reservas_probadas_MMM_bbl": 299.9,
+        "poblacion_2024_mm": 29.3,
+        "pib_petrolero_categoria": "25"
+      },
+      {
+        "rank": 35,
+        "pais": "Gabón",
+        "produccion_bbl_d": 226000,
+        "reservas_probadas_MMM_bbl": 2.0,
+        "poblacion_2024_mm": 2.4,
+        "pib_petrolero_categoria": "25"
+      },
+      {
+        "rank": 3,
+        "pais": "Rusia",
+        "produccion_bbl_d": 10750000,
+        "reservas_probadas_MMM_bbl": 80.0,
+        "poblacion_2024_mm": 144.0,
+        "pib_petrolero_categoria": "15"
+      },
+      {
+        "rank": 11,
+        "pais": "Noruega",
+        "produccion_bbl_d": 2026000,
+        "reservas_probadas_MMM_bbl": 8.0,
+        "poblacion_2024_mm": 5.5,
+        "pib_petrolero_categoria": "15"
+      },
+      {
+        "rank": 28,
+        "pais": "Guyana",
+        "produccion_bbl_d": 645000,
+        "reservas_probadas_MMM_bbl": 11.0,
+        "poblacion_2024_mm": 0.81,
+        "pib_petrolero_categoria": "15"
+      },
+      {
+        "rank": 30,
+        "pais": "Ecuador",
+        "produccion_bbl_d": 486000,
+        "reservas_probadas_MMM_bbl": 8.3,
+        "poblacion_2024_mm": 18.3,
+        "pib_petrolero_categoria": "15"
+      },
+      {
+        "rank": 39,
+        "pais": "Bahréin",
+        "produccion_bbl_d": 185000,
+        "reservas_probadas_MMM_bbl": 0.125,
+        "poblacion_2024_mm": 1.5,
+        "pib_petrolero_categoria": "15"
+      },
+      {
+        "rank": 12,
+        "pais": "México",
+        "produccion_bbl_d": 1905500,
+        "reservas_probadas_MMM_bbl": 9.7,
+        "poblacion_2024_mm": 129.0,
+        "pib_petrolero_categoria": "7"
+      },
+      {
+        "rank": 24,
+        "pais": "Colombia",
+        "produccion_bbl_d": 765500,
+        "reservas_probadas_MMM_bbl": 2.0,
+        "poblacion_2024_mm": 52.0,
+        "pib_petrolero_categoria": "7"
+      },
+      {
+        "rank": 29,
+        "pais": "Malasia",
+        "produccion_bbl_d": 600000,
+        "reservas_probadas_MMM_bbl": 3.6,
+        "poblacion_2024_mm": 34.0,
+        "pib_petrolero_categoria": "7"
+      },
+      {
+        "rank": 36,
+        "pais": "Sudán",
+        "produccion_bbl_d": 200000,
+        "reservas_probadas_MMM_bbl": 1.5,
+        "poblacion_2024_mm": 49.0,
+        "pib_petrolero_categoria": "7"
+      },
+      {
+        "rank": 38,
+        "pais": "Ghana",
+        "produccion_bbl_d": 186000,
+        "reservas_probadas_MMM_bbl": 0.7,
+        "poblacion_2024_mm": 34.0,
+        "pib_petrolero_categoria": "7"
+      },
+      {
+        "rank": 1,
+        "pais": "Estados Unidos",
+        "produccion_bbl_d": 13401000,
+        "reservas_probadas_MMM_bbl": 35.2,
+        "poblacion_2024_mm": 336.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 4,
+        "pais": "Canadá",
+        "produccion_bbl_d": 5500000,
+        "reservas_probadas_MMM_bbl": 170.9,
+        "poblacion_2024_mm": 40.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 5,
+        "pais": "China",
+        "produccion_bbl_d": 4715000,
+        "reservas_probadas_MMM_bbl": 25.1,
+        "poblacion_2024_mm": 1410.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 7,
+        "pais": "Irán",
+        "produccion_bbl_d": 4084000,
+        "reservas_probadas_MMM_bbl": 157.5,
+        "poblacion_2024_mm": 89.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 9,
+        "pais": "Brasil",
+        "produccion_bbl_d": 3630000,
+        "reservas_probadas_MMM_bbl": 16.2,
+        "poblacion_2024_mm": 216.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 15,
+        "pais": "Reino Unido",
+        "produccion_bbl_d": 1790000,
+        "reservas_probadas_MMM_bbl": 2.5,
+        "poblacion_2024_mm": 67.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 22,
+        "pais": "Indonesia",
+        "produccion_bbl_d": 845000,
+        "reservas_probadas_MMM_bbl": 3.2,
+        "poblacion_2024_mm": 278.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 23,
+        "pais": "India",
+        "produccion_bbl_d": 772000,
+        "reservas_probadas_MMM_bbl": 4.5,
+        "poblacion_2024_mm": 1428.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 26,
+        "pais": "Argentina",
+        "produccion_bbl_d": 700000,
+        "reservas_probadas_MMM_bbl": 2.4,
+        "poblacion_2024_mm": 46.5,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 27,
+        "pais": "Egipto",
+        "produccion_bbl_d": 661000,
+        "reservas_probadas_MMM_bbl": 3.3,
+        "poblacion_2024_mm": 112.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 31,
+        "pais": "Australia",
+        "produccion_bbl_d": 445000,
+        "reservas_probadas_MMM_bbl": 1.5,
+        "poblacion_2024_mm": 26.8,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 32,
+        "pais": "Tailandia",
+        "produccion_bbl_d": 440000,
+        "reservas_probadas_MMM_bbl": 0.4,
+        "poblacion_2024_mm": 71.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 37,
+        "pais": "Vietnam",
+        "produccion_bbl_d": 190000,
+        "reservas_probadas_MMM_bbl": 4.4,
+        "poblacion_2024_mm": 100.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 41,
+        "pais": "Italia",
+        "produccion_bbl_d": 150000,
+        "reservas_probadas_MMM_bbl": 0.6,
+        "poblacion_2024_mm": 59.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 42,
+        "pais": "Chad",
+        "produccion_bbl_d": 140000,
+        "reservas_probadas_MMM_bbl": 1.5,
+        "poblacion_2024_mm": 18.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 43,
+        "pais": "Alemania",
+        "produccion_bbl_d": 135000,
+        "reservas_probadas_MMM_bbl": 0.1,
+        "poblacion_2024_mm": 84.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 44,
+        "pais": "Perú",
+        "produccion_bbl_d": 123000,
+        "reservas_probadas_MMM_bbl": 1.2,
+        "poblacion_2024_mm": 34.6,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 45,
+        "pais": "Pakistán",
+        "produccion_bbl_d": 101000,
+        "reservas_probadas_MMM_bbl": 0.3,
+        "poblacion_2024_mm": 242.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 47,
+        "pais": "Sudáfrica",
+        "produccion_bbl_d": 100000,
+        "reservas_probadas_MMM_bbl": 0.0,
+        "poblacion_2024_mm": 61.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 48,
+        "pais": "Siria",
+        "produccion_bbl_d": 95000,
+        "reservas_probadas_MMM_bbl": 2.5,
+        "poblacion_2024_mm": 23.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 49,
+        "pais": "Turquía",
+        "produccion_bbl_d": 89000,
+        "reservas_probadas_MMM_bbl": 0.3,
+        "poblacion_2024_mm": 85.0,
+        "pib_petrolero_categoria": "3"
+      },
+      {
+        "rank": 50,
+        "pais": "Francia",
+        "produccion_bbl_d": 82000,
+        "reservas_probadas_MMM_bbl": 0.1,
+        "poblacion_2024_mm": 65.0,
+        "pib_petrolero_categoria": "3"
+      }
+    ],
+    "productores": [
+      {
+        "rank": 21,
+        "pais": "Venezuela",
+        "produccion_bbl_d": 943000,
+        "produccion_mbbl_d": 943.0,
+        "anos_produccion": 871.3084152878455,
+        "reservas_probadas_MMM_bbl": 299.9,
+        "poblacion_2024_mm": 29.3,
+        "exportaciones_petroleras_categoria": "Media-alta (20–30%)"
+      },
+      {
+        "rank": 18,
+        "pais": "Libia",
+        "produccion_bbl_d": 1255000,
+        "produccion_mbbl_d": 1255.0,
+        "anos_produccion": 105.6595535665557,
+        "reservas_probadas_MMM_bbl": 48.4,
+        "poblacion_2024_mm": 7.1,
+        "exportaciones_petroleras_categoria": "Muy alta (40–60%)"
+      },
+      {
+        "rank": 7,
+        "pais": "Irán",
+        "produccion_bbl_d": 4084000,
+        "produccion_mbbl_d": 4084.0,
+        "anos_produccion": 105.6578965022205,
+        "reservas_probadas_MMM_bbl": 157.5,
+        "poblacion_2024_mm": 89.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 10,
+        "pais": "Kuwait",
+        "produccion_bbl_d": 2720000,
+        "produccion_mbbl_d": 2720.0,
+        "anos_produccion": 102.23609991941983,
+        "reservas_probadas_MMM_bbl": 101.5,
+        "poblacion_2024_mm": 4.5,
+        "exportaciones_petroleras_categoria": "Muy alta (40–60%)"
+      },
+      {
+        "rank": 6,
+        "pais": "Irak",
+        "produccion_bbl_d": 4162000,
+        "produccion_mbbl_d": 4162.0,
+        "anos_produccion": 94.19865317648919,
+        "reservas_probadas_MMM_bbl": 143.1,
+        "poblacion_2024_mm": 45.0,
+        "exportaciones_petroleras_categoria": "Muy alta (40–60%)"
+      },
+      {
+        "rank": 4,
+        "pais": "Canadá",
+        "produccion_bbl_d": 5500000,
+        "produccion_mbbl_d": 5500.0,
+        "anos_produccion": 85.1307596513076,
+        "reservas_probadas_MMM_bbl": 170.9,
+        "poblacion_2024_mm": 40.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 48,
+        "pais": "Siria",
+        "produccion_bbl_d": 95000,
+        "produccion_mbbl_d": 95.0,
+        "anos_produccion": 72.09805335255948,
+        "reservas_probadas_MMM_bbl": 2.5,
+        "poblacion_2024_mm": 23.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 8,
+        "pais": "Emiratos Árabes Unidos",
+        "produccion_bbl_d": 3770000,
+        "produccion_mbbl_d": 3770.0,
+        "anos_produccion": 71.07299880091567,
+        "reservas_probadas_MMM_bbl": 97.8,
+        "poblacion_2024_mm": 10.2,
+        "exportaciones_petroleras_categoria": "Alta (30–45%)"
+      },
+      {
+        "rank": 2,
+        "pais": "Arabia Saudita",
+        "produccion_bbl_d": 10815700,
+        "produccion_mbbl_d": 10815.7,
+        "anos_produccion": 67.53247213810569,
+        "reservas_probadas_MMM_bbl": 266.6,
+        "poblacion_2024_mm": 36.0,
+        "exportaciones_petroleras_categoria": "Alta (30–45%)"
+      },
+      {
+        "rank": 37,
+        "pais": "Vietnam",
+        "produccion_bbl_d": 190000,
+        "produccion_mbbl_d": 190.0,
+        "anos_produccion": 63.44628695025235,
+        "reservas_probadas_MMM_bbl": 4.4,
+        "poblacion_2024_mm": 100.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 16,
+        "pais": "Nigeria",
+        "produccion_bbl_d": 1647000,
+        "produccion_mbbl_d": 1647.0,
+        "anos_produccion": 61.71453285758248,
+        "reservas_probadas_MMM_bbl": 37.1,
+        "poblacion_2024_mm": 227.0,
+        "exportaciones_petroleras_categoria": "Media-alta (20–30%)"
+      },
+      {
+        "rank": 40,
+        "pais": "Sudán del Sur",
+        "produccion_bbl_d": 160000,
+        "produccion_mbbl_d": 160.0,
+        "anos_produccion": 59.93150684931507,
+        "reservas_probadas_MMM_bbl": 3.5,
+        "poblacion_2024_mm": 11.5,
+        "exportaciones_petroleras_categoria": "Muy alta (40–60%)"
+      },
+      {
+        "rank": 30,
+        "pais": "Ecuador",
+        "produccion_bbl_d": 486000,
+        "produccion_mbbl_d": 486.0,
+        "anos_produccion": 46.78955972715487,
+        "reservas_probadas_MMM_bbl": 8.3,
+        "poblacion_2024_mm": 18.3,
+        "exportaciones_petroleras_categoria": "Media (10–20%)"
+      },
+      {
+        "rank": 28,
+        "pais": "Guyana",
+        "produccion_bbl_d": 645000,
+        "produccion_mbbl_d": 645.0,
+        "anos_produccion": 46.72400976956568,
+        "reservas_probadas_MMM_bbl": 11.0,
+        "poblacion_2024_mm": 0.81,
+        "exportaciones_petroleras_categoria": "Media (10–20%)"
+      },
+      {
+        "rank": 13,
+        "pais": "Kazajistán",
+        "produccion_bbl_d": 1897000,
+        "produccion_mbbl_d": 1897.0,
+        "anos_produccion": 43.327243448559734,
+        "reservas_probadas_MMM_bbl": 30.0,
+        "poblacion_2024_mm": 20.0,
+        "exportaciones_petroleras_categoria": "Media-alta (20–30%)"
+      },
+      {
+        "rank": 14,
+        "pais": "Qatar",
+        "produccion_bbl_d": 1815100,
+        "produccion_mbbl_d": 1815.1,
+        "anos_produccion": 38.03707558283894,
+        "reservas_probadas_MMM_bbl": 25.2,
+        "poblacion_2024_mm": 3.0,
+        "exportaciones_petroleras_categoria": "Muy alta (40–60%)"
+      },
+      {
+        "rank": 46,
+        "pais": "Brunéi",
+        "produccion_bbl_d": 100000,
+        "produccion_mbbl_d": 100.0,
+        "anos_produccion": 30.136986301369863,
+        "reservas_probadas_MMM_bbl": 1.1,
+        "poblacion_2024_mm": 0.45,
+        "exportaciones_petroleras_categoria": "Muy alta (40–60%)"
+      },
+      {
+        "rank": 42,
+        "pais": "Chad",
+        "produccion_bbl_d": 140000,
+        "produccion_mbbl_d": 140.0,
+        "anos_produccion": 29.354207436399214,
+        "reservas_probadas_MMM_bbl": 1.5,
+        "poblacion_2024_mm": 18.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 25,
+        "pais": "Azerbaiyán",
+        "produccion_bbl_d": 712000,
+        "produccion_mbbl_d": 712.0,
+        "anos_produccion": 26.935508696321378,
+        "reservas_probadas_MMM_bbl": 7.0,
+        "poblacion_2024_mm": 10.1,
+        "exportaciones_petroleras_categoria": "Alta (30–45%)"
+      },
+      {
+        "rank": 44,
+        "pais": "Perú",
+        "produccion_bbl_d": 123000,
+        "produccion_mbbl_d": 123.0,
+        "anos_produccion": 26.72903441363181,
+        "reservas_probadas_MMM_bbl": 1.2,
+        "poblacion_2024_mm": 34.6,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 35,
+        "pais": "Gabón",
+        "produccion_bbl_d": 226000,
+        "produccion_mbbl_d": 226.0,
+        "anos_produccion": 24.24536307431204,
+        "reservas_probadas_MMM_bbl": 2.0,
+        "poblacion_2024_mm": 2.4,
+        "exportaciones_petroleras_categoria": "Media-alta (20–30%)"
+      },
+      {
+        "rank": 17,
+        "pais": "Argelia",
+        "produccion_bbl_d": 1415000,
+        "produccion_mbbl_d": 1415.0,
+        "anos_produccion": 23.62166610194104,
+        "reservas_probadas_MMM_bbl": 12.2,
+        "poblacion_2024_mm": 45.5,
+        "exportaciones_petroleras_categoria": "Media-alta (20–30%)"
+      },
+      {
+        "rank": 36,
+        "pais": "Sudán",
+        "produccion_bbl_d": 200000,
+        "produccion_mbbl_d": 200.0,
+        "anos_produccion": 20.54794520547945,
+        "reservas_probadas_MMM_bbl": 1.5,
+        "poblacion_2024_mm": 49.0,
+        "exportaciones_petroleras_categoria": "Baja (5–10%)"
+      },
+      {
+        "rank": 3,
+        "pais": "Rusia",
+        "produccion_bbl_d": 10750000,
+        "produccion_mbbl_d": 10750.0,
+        "anos_produccion": 20.38865880853775,
+        "reservas_probadas_MMM_bbl": 80.0,
+        "poblacion_2024_mm": 144.0,
+        "exportaciones_petroleras_categoria": "Media (10–20%)"
+      },
+      {
+        "rank": 19,
+        "pais": "Angola",
+        "produccion_bbl_d": 1235000,
+        "produccion_mbbl_d": 1235.0,
+        "anos_produccion": 18.634573789584604,
+        "reservas_probadas_MMM_bbl": 8.4,
+        "poblacion_2024_mm": 36.0,
+        "exportaciones_petroleras_categoria": "Alta (30–45%)"
+      },
+      {
+        "rank": 33,
+        "pais": "Congo (Rep. del Congo)",
+        "produccion_bbl_d": 275000,
+        "produccion_mbbl_d": 275.0,
+        "anos_produccion": 17.932752179327522,
+        "reservas_probadas_MMM_bbl": 1.8,
+        "poblacion_2024_mm": 5.8,
+        "exportaciones_petroleras_categoria": "Alta (30–45%)"
+      },
+      {
+        "rank": 29,
+        "pais": "Malasia",
+        "produccion_bbl_d": 600000,
+        "produccion_mbbl_d": 600.0,
+        "anos_produccion": 16.438356164383563,
+        "reservas_probadas_MMM_bbl": 3.6,
+        "poblacion_2024_mm": 34.0,
+        "exportaciones_petroleras_categoria": "Baja (5–10%)"
+      },
+      {
+        "rank": 23,
+        "pais": "India",
+        "produccion_bbl_d": 772000,
+        "produccion_mbbl_d": 772.0,
+        "anos_produccion": 15.969905600113565,
+        "reservas_probadas_MMM_bbl": 4.5,
+        "poblacion_2024_mm": 1428.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 5,
+        "pais": "China",
+        "produccion_bbl_d": 4715000,
+        "produccion_mbbl_d": 4715.0,
+        "anos_produccion": 14.584755734394747,
+        "reservas_probadas_MMM_bbl": 25.1,
+        "poblacion_2024_mm": 1410.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 20,
+        "pais": "Omán",
+        "produccion_bbl_d": 1040000,
+        "produccion_mbbl_d": 1040.0,
+        "anos_produccion": 14.22550052687039,
+        "reservas_probadas_MMM_bbl": 5.4,
+        "poblacion_2024_mm": 4.7,
+        "exportaciones_petroleras_categoria": "Muy alta (40–60%)"
+      },
+      {
+        "rank": 12,
+        "pais": "México",
+        "produccion_bbl_d": 1905500,
+        "produccion_mbbl_d": 1905.5,
+        "anos_produccion": 13.946650467464405,
+        "reservas_probadas_MMM_bbl": 9.7,
+        "poblacion_2024_mm": 129.0,
+        "exportaciones_petroleras_categoria": "Baja (5–10%)"
+      },
+      {
+        "rank": 27,
+        "pais": "Egipto",
+        "produccion_bbl_d": 661000,
+        "produccion_mbbl_d": 661.0,
+        "anos_produccion": 13.677906036930347,
+        "reservas_probadas_MMM_bbl": 3.3,
+        "poblacion_2024_mm": 112.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 9,
+        "pais": "Brasil",
+        "produccion_bbl_d": 3630000,
+        "produccion_mbbl_d": 3630.0,
+        "anos_produccion": 12.226876485905128,
+        "reservas_probadas_MMM_bbl": 16.2,
+        "poblacion_2024_mm": 216.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 41,
+        "pais": "Italia",
+        "produccion_bbl_d": 150000,
+        "produccion_mbbl_d": 150.0,
+        "anos_produccion": 10.95890410958904,
+        "reservas_probadas_MMM_bbl": 0.6,
+        "poblacion_2024_mm": 59.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 11,
+        "pais": "Noruega",
+        "produccion_bbl_d": 2026000,
+        "produccion_mbbl_d": 2026.0,
+        "anos_produccion": 10.818266643227089,
+        "reservas_probadas_MMM_bbl": 8.0,
+        "poblacion_2024_mm": 5.5,
+        "exportaciones_petroleras_categoria": "Media (10–20%)"
+      },
+      {
+        "rank": 22,
+        "pais": "Indonesia",
+        "produccion_bbl_d": 845000,
+        "produccion_mbbl_d": 845.0,
+        "anos_produccion": 10.375293831563589,
+        "reservas_probadas_MMM_bbl": 3.2,
+        "poblacion_2024_mm": 278.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 38,
+        "pais": "Ghana",
+        "produccion_bbl_d": 186000,
+        "produccion_mbbl_d": 186.0,
+        "anos_produccion": 10.310796877301517,
+        "reservas_probadas_MMM_bbl": 0.7,
+        "poblacion_2024_mm": 34.0,
+        "exportaciones_petroleras_categoria": "Baja (5–10%)"
+      },
+      {
+        "rank": 26,
+        "pais": "Argentina",
+        "produccion_bbl_d": 700000,
+        "produccion_mbbl_d": 700.0,
+        "anos_produccion": 9.393346379647749,
+        "reservas_probadas_MMM_bbl": 2.4,
+        "poblacion_2024_mm": 46.5,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 31,
+        "pais": "Australia",
+        "produccion_bbl_d": 445000,
+        "produccion_mbbl_d": 445.0,
+        "anos_produccion": 9.235031553024472,
+        "reservas_probadas_MMM_bbl": 1.5,
+        "poblacion_2024_mm": 26.8,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 49,
+        "pais": "Turquía",
+        "produccion_bbl_d": 89000,
+        "produccion_mbbl_d": 89.0,
+        "anos_produccion": 9.235031553024472,
+        "reservas_probadas_MMM_bbl": 0.3,
+        "poblacion_2024_mm": 85.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 45,
+        "pais": "Pakistán",
+        "produccion_bbl_d": 101000,
+        "produccion_mbbl_d": 101.0,
+        "anos_produccion": 8.137800081378,
+        "reservas_probadas_MMM_bbl": 0.3,
+        "poblacion_2024_mm": 242.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 1,
+        "pais": "Estados Unidos",
+        "produccion_bbl_d": 13401000,
+        "produccion_mbbl_d": 13401.0,
+        "anos_produccion": 7.1963552096398455,
+        "reservas_probadas_MMM_bbl": 35.2,
+        "poblacion_2024_mm": 336.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 24,
+        "pais": "Colombia",
+        "produccion_bbl_d": 765500,
+        "produccion_mbbl_d": 765.5,
+        "anos_produccion": 7.158003990587225,
+        "reservas_probadas_MMM_bbl": 2.0,
+        "poblacion_2024_mm": 52.0,
+        "exportaciones_petroleras_categoria": "Baja (5–10%)"
+      },
+      {
+        "rank": 34,
+        "pais": "Turkmenistán",
+        "produccion_bbl_d": 270000,
+        "produccion_mbbl_d": 270.0,
+        "anos_produccion": 6.0882800608828,
+        "reservas_probadas_MMM_bbl": 0.6,
+        "poblacion_2024_mm": 7.0,
+        "exportaciones_petroleras_categoria": "Alta (30–45%)"
+      },
+      {
+        "rank": 15,
+        "pais": "Reino Unido",
+        "produccion_bbl_d": 1790000,
+        "produccion_mbbl_d": 1790.0,
+        "anos_produccion": 3.8264329991581847,
+        "reservas_probadas_MMM_bbl": 2.5,
+        "poblacion_2024_mm": 67.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 50,
+        "pais": "Francia",
+        "produccion_bbl_d": 82000,
+        "produccion_mbbl_d": 82.0,
+        "anos_produccion": 3.341129301703976,
+        "reservas_probadas_MMM_bbl": 0.1,
+        "poblacion_2024_mm": 65.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 32,
+        "pais": "Tailandia",
+        "produccion_bbl_d": 440000,
+        "produccion_mbbl_d": 440.0,
+        "anos_produccion": 2.4906600249066004,
+        "reservas_probadas_MMM_bbl": 0.4,
+        "poblacion_2024_mm": 71.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 43,
+        "pais": "Alemania",
+        "produccion_bbl_d": 135000,
+        "produccion_mbbl_d": 135.0,
+        "anos_produccion": 2.0294266869609334,
+        "reservas_probadas_MMM_bbl": 0.1,
+        "poblacion_2024_mm": 84.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      },
+      {
+        "rank": 39,
+        "pais": "Bahréin",
+        "produccion_bbl_d": 185000,
+        "produccion_mbbl_d": 185.0,
+        "anos_produccion": 1.8511662347278783,
+        "reservas_probadas_MMM_bbl": 0.125,
+        "poblacion_2024_mm": 1.5,
+        "exportaciones_petroleras_categoria": "Media (10–20%)"
+      },
+      {
+        "rank": 47,
+        "pais": "Sudáfrica",
+        "produccion_bbl_d": 100000,
+        "produccion_mbbl_d": 100.0,
+        "anos_produccion": 0.0,
+        "reservas_probadas_MMM_bbl": 0.0,
+        "poblacion_2024_mm": 61.0,
+        "exportaciones_petroleras_categoria": "Muy baja (<5%)"
+      }
+    ]
+  },
+  "estadisticas": {
+    "exportaciones": {
+      "total_paises": 50,
+      "produccion": {
+        "min": 82000.0,
+        "max": 13401000.0,
+        "media": 1807896.0,
+        "mediana": 706000.0
+      },
+      "reservas": {
+        "min": 0.0,
+        "max": 299.9,
+        "media": 33.0045,
+        "mediana": 4.0
+      },
+      "poblacion": {
+        "min": 0.45,
+        "max": 1428.0,
+        "media": 117.31119999999999,
+        "mediana": 38.0
+      },
+      "categorias_pib": {
+        "3": 22,
+        "50": 7,
+        "35": 6,
+        "25": 5,
+        "15": 5,
+        "7": 5
+      }
+    },
+    "productores": {
+      "total_paises": 50,
+      "produccion": {
+        "min": 82000.0,
+        "max": 13401000.0,
+        "media": 1807896.0,
+        "mediana": 706000.0
+      },
+      "anos_produccion": {
+        "min": 0.0,
+        "max": 871.3084152878455,
+        "media": 47.73815380281957,
+        "mediana": 18.283662984456065
+      },
+      "reservas": {
+        "min": 0.0,
+        "max": 299.9,
+        "media": 33.0045,
+        "mediana": 4.0
+      },
+      "poblacion": {
+        "min": 0.45,
+        "max": 1428.0,
+        "media": 117.31119999999999,
+        "mediana": 38.0
+      },
+      "categorias_exportaciones": {
+        "Muy baja (<5%)": 22,
+        "Muy alta (40–60%)": 7,
+        "Alta (30–45%)": 6,
+        "Media-alta (20–30%)": 5,
+        "Media (10–20%)": 5,
+        "Baja (5–10%)": 5
+      }
+    }
+  },
+  "top10": {
+    "produccion": [
+      {
+        "pais": "Estados Unidos",
+        "rank": 1,
+        "valor": 13401000
+      },
+      {
+        "pais": "Arabia Saudita",
+        "rank": 2,
+        "valor": 10815700
+      },
+      {
+        "pais": "Rusia",
+        "rank": 3,
+        "valor": 10750000
+      },
+      {
+        "pais": "Canadá",
+        "rank": 4,
+        "valor": 5500000
+      },
+      {
+        "pais": "China",
+        "rank": 5,
+        "valor": 4715000
+      },
+      {
+        "pais": "Irak",
+        "rank": 6,
+        "valor": 4162000
+      },
+      {
+        "pais": "Irán",
+        "rank": 7,
+        "valor": 4084000
+      },
+      {
+        "pais": "Emiratos Árabes Unidos",
+        "rank": 8,
+        "valor": 3770000
+      },
+      {
+        "pais": "Brasil",
+        "rank": 9,
+        "valor": 3630000
+      },
+      {
+        "pais": "Kuwait",
+        "rank": 10,
+        "valor": 2720000
+      }
+    ],
+    "reservas": [
+      {
+        "pais": "Venezuela",
+        "rank": 21,
+        "valor": 299.9
+      },
+      {
+        "pais": "Arabia Saudita",
+        "rank": 2,
+        "valor": 266.6
+      },
+      {
+        "pais": "Canadá",
+        "rank": 4,
+        "valor": 170.9
+      },
+      {
+        "pais": "Irán",
+        "rank": 7,
+        "valor": 157.5
+      },
+      {
+        "pais": "Irak",
+        "rank": 6,
+        "valor": 143.1
+      },
+      {
+        "pais": "Kuwait",
+        "rank": 10,
+        "valor": 101.5
+      },
+      {
+        "pais": "Emiratos Árabes Unidos",
+        "rank": 8,
+        "valor": 97.8
+      },
+      {
+        "pais": "Rusia",
+        "rank": 3,
+        "valor": 80.0
+      },
+      {
+        "pais": "Libia",
+        "rank": 18,
+        "valor": 48.4
+      },
+      {
+        "pais": "Nigeria",
+        "rank": 16,
+        "valor": 37.1
+      }
+    ],
+    "poblacion": [
+      {
+        "pais": "India",
+        "rank": 23,
+        "valor": 1428.0
+      },
+      {
+        "pais": "China",
+        "rank": 5,
+        "valor": 1410.0
+      },
+      {
+        "pais": "Estados Unidos",
+        "rank": 1,
+        "valor": 336.0
+      },
+      {
+        "pais": "Indonesia",
+        "rank": 22,
+        "valor": 278.0
+      },
+      {
+        "pais": "Pakistán",
+        "rank": 45,
+        "valor": 242.0
+      },
+      {
+        "pais": "Nigeria",
+        "rank": 16,
+        "valor": 227.0
+      },
+      {
+        "pais": "Brasil",
+        "rank": 9,
+        "valor": 216.0
+      },
+      {
+        "pais": "Rusia",
+        "rank": 3,
+        "valor": 144.0
+      },
+      {
+        "pais": "México",
+        "rank": 12,
+        "valor": 129.0
+      },
+      {
+        "pais": "Egipto",
+        "rank": 27,
+        "valor": 112.0
+      }
+    ],
+    "anos_produccion": [
+      {
+        "pais": "Venezuela",
+        "rank": 21,
+        "valor": 871.3084152878455
+      },
+      {
+        "pais": "Libia",
+        "rank": 18,
+        "valor": 105.6595535665557
+      },
+      {
+        "pais": "Irán",
+        "rank": 7,
+        "valor": 105.6578965022205
+      },
+      {
+        "pais": "Kuwait",
+        "rank": 10,
+        "valor": 102.23609991941983
+      },
+      {
+        "pais": "Irak",
+        "rank": 6,
+        "valor": 94.19865317648919
+      },
+      {
+        "pais": "Canadá",
+        "rank": 4,
+        "valor": 85.1307596513076
+      },
+      {
+        "pais": "Siria",
+        "rank": 48,
+        "valor": 72.09805335255948
+      },
+      {
+        "pais": "Emiratos Árabes Unidos",
+        "rank": 8,
+        "valor": 71.07299880091567
+      },
+      {
+        "pais": "Arabia Saudita",
+        "rank": 2,
+        "valor": 67.53247213810569
+      },
+      {
+        "pais": "Vietnam",
+        "rank": 37,
+        "valor": 63.44628695025235
+      }
+    ]
+  },
+  "paises": [
+    "Alemania",
+    "Angola",
+    "Arabia Saudita",
+    "Argelia",
+    "Argentina",
+    "Australia",
+    "Azerbaiyán",
+    "Bahréin",
+    "Brasil",
+    "Brunéi",
+    "Canadá",
+    "Chad",
+    "China",
+    "Colombia",
+    "Congo (Rep. del Congo)",
+    "Ecuador",
+    "Egipto",
+    "Emiratos Árabes Unidos",
+    "Estados Unidos",
+    "Francia",
+    "Gabón",
+    "Ghana",
+    "Guyana",
+    "India",
+    "Indonesia",
+    "Irak",
+    "Irán",
+    "Italia",
+    "Kazajistán",
+    "Kuwait",
+    "Libia",
+    "Malasia",
+    "México",
+    "Nigeria",
+    "Noruega",
+    "Omán",
+    "Pakistán",
+    "Perú",
+    "Qatar",
+    "Reino Unido",
+    "Rusia",
+    "Siria",
+    "Sudáfrica",
+    "Sudán",
+    "Sudán del Sur",
+    "Tailandia",
+    "Turkmenistán",
+    "Turquía",
+    "Venezuela",
+    "Vietnam"
+  ]
+}
